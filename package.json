@@ -1,0 +1,46 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "name": "swr-vue",
+  "author": "Chathula Sampath <schathula@gmail.com>",
+  "main": "dist/index.js",
+  "module": "dist/swr-vue.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "watch": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint src",
+    "prepare": "tsdx build",
+    "dev": "nodemon index.js"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^0.4.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "husky": "^4.2.3",
+    "nodemon": "^2.0.2",
+    "tsdx": "^0.12.3",
+    "tslib": "^1.11.1",
+    "typescript": "^3.8.3"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+}
