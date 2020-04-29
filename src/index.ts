@@ -1,1 +1,1 @@
-console.log('changed text');
+export { useQuery } from './lib/use-query';
